@@ -14,3 +14,13 @@ INSERT INTO tb_user_role (user_id, role_id) VALUES (3, 1);
 INSERT INTO tb_user_role (user_id, role_id) VALUES (3, 2);
 INSERT INTO tb_user_role (user_id, role_id) VALUES (3, 3);
 
+INSERT INTO tb_course (name, img_Uri, img_Gray_Uri ) VALUES ('bootcamp HTML','https://akm-img-a-in.tosshub.com/indiatoday/images/story/201811/online-3412473_1920_1.jpeg?tz.RfsTe_UTLHiDqxmpG7PY_nTIBjwF7','https://upload.wikimedia.org/wikipedia/commons/1/1f/Switch-course-book-grey.svg');
+
+INSERT INTO tb_offer (edition, start_Moment, end_Moment, course_id) VALUES ('1.0', TIMESTAMP WITH TIME ZONE '2020-11-14T03:00:00Z',TIMESTAMP WITH TIME ZONE '2021-11-14T03:00:00Z',1);
+INSERT INTO tb_offer (edition, start_Moment, end_Moment, course_id) VALUES ('2.0', TIMESTAMP WITH TIME ZONE '2020-12-14T03:00:00Z',TIMESTAMP WITH TIME ZONE '2021-12-14T03:00:00Z',1);
+
+
+INSERT INTO tb_notification (moment,read, route, text, user_id ) VALUES (TIMESTAMP WITH TIME ZONE '2020-12-14T03:00:00Z',true,'teste','atividade concluida',1);
+INSERT INTO tb_notification (moment, read, route, text, user_id ) VALUES (TIMESTAMP WITH TIME ZONE '2020-12-14T03:00:00Z', false,'teste','atividade concluida',2)
+
+
