@@ -21,6 +21,11 @@ INSERT INTO tb_offer (edition, start_Moment, end_Moment, course_id) VALUES ('2.0
 
 
 INSERT INTO tb_notification (moment,read, route, text, user_id ) VALUES (TIMESTAMP WITH TIME ZONE '2020-12-14T03:00:00Z',true,'teste','atividade concluida',1);
-INSERT INTO tb_notification (moment, read, route, text, user_id ) VALUES (TIMESTAMP WITH TIME ZONE '2020-12-14T03:00:00Z', false,'teste','atividade concluida',2)
+INSERT INTO tb_notification (moment, read, route, text, user_id ) VALUES (TIMESTAMP WITH TIME ZONE '2020-12-14T03:00:00Z', false,'teste','atividade concluida',2);
+
+
+INSERT INTO tb_resource(title, description, position, img_Uri, type, offer_id)  VALUES ('Trilha HTML', 'Trilha principal do curso', 1, 'https://akm-img-a-in.tosshub.com/indiatoday/images/story/201811/online-3412473_1920_1.jpeg?tz.RfsTe_UTLHiDqxmpG7PY_nTIBjwF7', 1, 1);
+INSERT INTO tb_resource(title, description, position, img_Uri, type, offer_id)  VALUES ('Forum', 'Tire suas Duvidas', 2, 'https://akm-img-a-in.tosshub.com/indiatoday/images/story/201811/online-3412473_1920_1.jpeg?tz.RfsTe_UTLHiDqxmpG7PY_nTIBjwF7', 2, 1);
+INSERT INTO tb_resource(title, description, position, img_Uri, type, offer_id)  VALUES ('Lives', 'Lives para turma', 3, 'https://akm-img-a-in.tosshub.com/indiatoday/images/story/201811/online-3412473_1920_1.jpeg?tz.RfsTe_UTLHiDqxmpG7PY_nTIBjwF7', 0, 1);
 
 
