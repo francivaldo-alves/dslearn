@@ -29,3 +29,6 @@ INSERT INTO tb_resource(title, description, position, img_Uri, type, offer_id)  
 INSERT INTO tb_resource(title, description, position, img_Uri, type, offer_id)  VALUES ('Lives', 'Lives para turma', 3, 'https://akm-img-a-in.tosshub.com/indiatoday/images/story/201811/online-3412473_1920_1.jpeg?tz.RfsTe_UTLHiDqxmpG7PY_nTIBjwF7', 0, 1);
 
 
+INSERT INTO tb_section(title, description, position, img_Uri,  resource_id, prerequisite_id )  VALUES ('Capitulo 1', 'vamos comerçar', 1, 'https://akm-img-a-in.tosshub.com/indiatoday/images/story/201811/online-3412473_1920_1.jpeg?tz.RfsTe_UTLHiDqxmpG7PY_nTIBjwF7', 1, null);
+INSERT INTO tb_section(title, description, position, img_Uri,  resource_id, prerequisite_id )  VALUES ('Capitulo 2', 'vamos continuar', 2, 'https://akm-img-a-in.tosshub.com/indiatoday/images/story/201811/online-3412473_1920_1.jpeg?tz.RfsTe_UTLHiDqxmpG7PY_nTIBjwF7', 1, 1);
+INSERT INTO tb_section(title, description, position, img_Uri,  resource_id, prerequisite_id )  VALUES ('Capitulo 3', 'vamos finalizar', 3, 'https://akm-img-a-in.tosshub.com/indiatoday/images/story/201811/online-3412473_1920_1.jpeg?tz.RfsTe_UTLHiDqxmpG7PY_nTIBjwF7', 1, 2);
