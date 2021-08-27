@@ -32,3 +32,7 @@ INSERT INTO tb_resource(title, description, position, img_Uri, type, offer_id)  
 INSERT INTO tb_section(title, description, position, img_Uri,  resource_id, prerequisite_id )  VALUES ('Capitulo 1', 'vamos comerçar', 1, 'https://akm-img-a-in.tosshub.com/indiatoday/images/story/201811/online-3412473_1920_1.jpeg?tz.RfsTe_UTLHiDqxmpG7PY_nTIBjwF7', 1, null);
 INSERT INTO tb_section(title, description, position, img_Uri,  resource_id, prerequisite_id )  VALUES ('Capitulo 2', 'vamos continuar', 2, 'https://akm-img-a-in.tosshub.com/indiatoday/images/story/201811/online-3412473_1920_1.jpeg?tz.RfsTe_UTLHiDqxmpG7PY_nTIBjwF7', 1, 1);
 INSERT INTO tb_section(title, description, position, img_Uri,  resource_id, prerequisite_id )  VALUES ('Capitulo 3', 'vamos finalizar', 3, 'https://akm-img-a-in.tosshub.com/indiatoday/images/story/201811/online-3412473_1920_1.jpeg?tz.RfsTe_UTLHiDqxmpG7PY_nTIBjwF7', 1, 2);
+
+
+INSERT INTO tb_enrollment(user_id, offer_id, enroll_Moment, refund_Moment, available, only_Update) VALUES (1, 1, TIMESTAMP WITH TIME ZONE '2020-11-14T03:00:00Z',null, true, false);
+INSERT INTO tb_enrollment(user_id, offer_id, enroll_Moment, refund_Moment, available, only_Update) VALUES (2, 1, TIMESTAMP WITH TIME ZONE '2020-11-14T03:00:00Z',null, true, false);
