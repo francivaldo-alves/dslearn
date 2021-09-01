@@ -14,65 +14,64 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "tb_course")
 public class Course implements Serializable {
+	private static final long serialVersionUID = 1L;
 
-    private static final long serialVersionUID = 1L;
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
+	private String name;
+	private String imgUri;
+	private String imgGrayUri;
+	
+	@OneToMany(mappedBy = "course")
+	private List<Offer> offers = new ArrayList<>();
+	
+	public Course() {
+	}
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-    private String name;
-    private String imgUri;
-    private String imgGrayUri;
+	public Course(Long id, String name, String imgUri, String imgGrayUri) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.imgUri = imgUri;
+		this.imgGrayUri = imgGrayUri;
+	}
 
-    @OneToMany(mappedBy = "course")
-  private List<Offer> offers = new ArrayList<>();
+	public Long getId() {
+		return id;
+	}
 
-    public Course(){}
+	public void setId(Long id) {
+		this.id = id;
+	}
 
+	public String getName() {
+		return name;
+	}
 
-    public Course(Long id, String name, String imgUri, String imgGrayUri) {
-        this.id = id;
-        this.name = name;
-        this.imgUri = imgUri;
-        this.imgGrayUri = imgGrayUri;
-    }
+	public void setName(String name) {
+		this.name = name;
+	}
 
-    public Long getId() {
-        return id;
-    }
+	public String getImgUri() {
+		return imgUri;
+	}
 
-    public void setId(Long id) {
-        this.id = id;
-    }
+	public void setImgUri(String imgUri) {
+		this.imgUri = imgUri;
+	}
 
-    public String getName() {
-        return name;
-    }
+	public String getImgGrayUri() {
+		return imgGrayUri;
+	}
 
-    public void setName(String name) {
-        this.name = name;
-    }
+	public void setImgGrayUri(String imgGrayUri) {
+		this.imgGrayUri = imgGrayUri;
+	}
 
-    public String getImgUri() {
-        return imgUri;
-    }
-
-    public void setImgUri(String imgUri) {
-        this.imgUri = imgUri;
-    }
-
-    public String getImgGrayUri() {
-        return imgGrayUri;
-    }
-
-    public void setImgGrayUri(String imgGrayUri) {
-        this.imgGrayUri = imgGrayUri;
-    }
-
-    public List<Offer> getOffers() {
-       return offers;
-    }
-
+	public List<Offer> getOffers() {
+		return offers;
+	}
 
 	@Override
 	public int hashCode() {
@@ -81,7 +80,6 @@ public class Course implements Serializable {
 		result = prime * result + ((id == null) ? 0 : id.hashCode());
 		return result;
 	}
-
 
 	@Override
 	public boolean equals(Object obj) {
@@ -99,6 +97,4 @@ public class Course implements Serializable {
 			return false;
 		return true;
 	}
-
-
 }
